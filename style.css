@@ -1,0 +1,117 @@
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #10233d;
+  --muted: #334e6f;
+  --accent: #005ea5;
+  --accent-hover: #003d6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #eef3f8 0%, #f8fafc 100%);
+  line-height: 1.6;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 2px solid #d7e2ee;
+  padding: 1rem 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+}
+
+p {
+  color: var(--muted);
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+a:focus-visible {
+  outline: 3px solid #ffb100;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+section {
+  background: var(--surface);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #d7e2ee;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0 0.75rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--surface);
+  border-top: 2px solid #d7e2ee;
+}
+
+/* Responsive layout for tablets and phones */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 0.75rem;
+  }
+
+  section {
+    padding: 0.75rem;
+  }
+}
